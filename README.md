@@ -118,7 +118,7 @@ python3 ./app/kofamscan_parser.py \
 ```
 
 ## Paper
-Will be soon.
+Kawashima S., Okabeppu Y., Miyazawa S., Ichikawa N., Nagazumi H., Nishihara Y., Nakazato T., Goto S., Kurokawa K., Ishii M., Mori H. A curated resource of chemolithoautotrophic genomes and marker genes for CO₂ fixation pathway prediction. accepted.
 
 ## License
 MIT License
