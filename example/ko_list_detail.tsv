@@ -1,4 +1,4 @@
-hit	rank	asterisk_mark	gene	KO	threshold	score	e_value	KO_definition
+selected	rank	significant	gene name	KO	thrshld	score	E-value	"KO definition"
 Y	1	*	WP_010809295.1	K00855	173.77	317.8	4.6e-95	"phosphoribulokinase [EC:2.7.1.19]"
 	2		WP_010809295.1	K00876	143.00	20.2	8.6e-05	"uridine kinase [EC:2.7.1.48]"
 	3		WP_010809295.1	K23148	179.00	17.8	0.00084	"cytidine diphosphoramidate kinase [EC:2.7.1.224]"

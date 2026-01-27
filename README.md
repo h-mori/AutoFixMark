@@ -88,7 +88,7 @@ K01601
 #### example/ko_list_gene.tsv:
 This format allows verification of the assigned gene and score. 
 ```
-KO	gene name	thrshld	score	E-value	mark
+KO	gene name	thrshld	score	E-value	significant
 K00855	WP_010809295.1	173.77	317.8	4.6e-95	*
 K01601	WP_010809289.1	332.67	798.5	8.6e-241	*
 K00855	WP_011154333.1	173.77	311.3	4.3e-93	*
@@ -103,18 +103,18 @@ This format enables human verification of KO assignments per gene. It filters to
 |----------|-------------|
 | `input_file` | Path to the KofamScan result **TSV file** (required). |
 | `output_file` | Path to the **output TSV file** (required). |
-| `--top N` | Number of top hits to select for KO extraction when no asterisk is present (default: 1).　If you wish to select only KOs with an asterisk, specify 0. |
-| `--min-score-ratio R` | Minimum score/threshold ratio (0 < R < 1) for selecting hits without asterisk. If not specified, no ratio filtering is applied. |
+| `--top <int>` | Number of top hits to select for KO extraction when no asterisk is present (default: 1).　If you wish to select only KOs with an asterisk, specify 0. |
+| `--relaxed-threshold-ratio <float>` | Relaxation factor applied to the score threshold. Hits with scores ≥ (threshold × relaxed-threshold) are considered, and the highest-scoring hit among them is selected. The value should be between 0 and 1. |
 
 In the KofamScan results, an asterisk is assigned to KOs whose score exceeds the threshold (see: https://academic.oup.com/bioinformatics/article/36/7/2251/5631907). However, in some cases, better annotation results can be obtained by including hits without the asterisk. 
                                                                                                                                                                              
-For genes without the asterisk, you can filter assignments based on the score/threshold ratio. In the example below, the top hit is selected for genes without an asterisk `--top 1`(default value), but assignments with a ratio below 50% `--min-score-ratio 0.5` are excluded as low-quality.
+For genes without the asterisk, you can filter assignments based on the score/thrshld ratio. In the example below, the top hit is selected for genes without an asterisk `--top 1`(default value), but assignments with a ratio below 50% `--relaxed-threshold-ratio 0.5` are excluded as low-quality.
 
 ```
 python3 ./app/kofamscan_parser.py \
   ./example/kofam_result_wo_asterisk.tsv \
-  ./example/kofam_result_cutoff_0.5_ko_list.tsv \
-  --min-score-ratio 0.5
+  ./example/kofam_result_relaxed_0.5_ko_list.tsv \
+  --relaxed-threshold-ratio 0.5
 ```
 
 ## Paper

@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 - `kofamscan_parser.py` now always outputs 3 files: `<output>.tsv` (KO list), `<output>_gene.tsv` (gene details), and `<output>_detail.tsv` (detail view)
 - Removed `--gene`, `--detail`, and `--detail-top` options (functionality is now automatic)
+- Renamed `--min-score-ratio` to `--relaxed-threshold-ratio`
 
 ## [1.0.1] - 2025-12-29
 
