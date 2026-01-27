@@ -1,0 +1,24 @@
+hit	rank	asterisk_mark	gene	KO	threshold	score	e_value	KO_definition
+Y	1	*	WP_010809295.1	K00855	173.77	317.8	4.6e-95	"phosphoribulokinase [EC:2.7.1.19]"
+	2		WP_010809295.1	K00876	143.00	20.2	8.6e-05	"uridine kinase [EC:2.7.1.48]"
+	3		WP_010809295.1	K23148	179.00	17.8	0.00084	"cytidine diphosphoramidate kinase [EC:2.7.1.224]"
+	4		WP_010809295.1	K00860	328.87	12.2	0.033	"adenylylsulfate kinase [EC:2.7.1.25]"
+	5		WP_010809295.1	K16214	115.53	10.8	0.072	"UDP-N-acetylglucosamine kinase [EC:2.7.1.176]"
+	6		WP_010809295.1	K13799	557.17	9.9	0.068	"pantoate ligase / CMP/dCMP kinase [EC:6.3.2.1 2.7.4.25]"
+----------------------------------------------------------------------------------------------------
+Y	1	*	WP_010809289.1	K01601	332.67	798.5	8.6e-241	"ribulose-bisphosphate carboxylase large chain [EC:4.1.1.39]"
+	2		WP_010809289.1	K01559	547.53	203.9	1e-60	"3-oxoisoapionate-4-phosphate transcarboxylase/hydrolase [EC:3.7.1.28]"
+	3		WP_010809289.1	K24268	659.63	173.3	2.5e-51	"3-oxoisoapionate-4-phosphate decarboxylase [EC:4.1.1.121]"
+	4		WP_010809289.1	K08965	362.00	145.9	4e-43	"2,3-diketo-5-methylthiopentyl-1-phosphate enolase [EC:5.3.2.5]"
+	5		WP_010809289.1	K25035	355.90	131.2	1.1e-38	"S-methyl-5-thioribulose 1-phosphate isomerase [EC:5.3.3.23]"
+----------------------------------------------------------------------------------------------------
+Y	1	*	WP_011154333.1	K00855	173.77	311.3	4.3e-93	"phosphoribulokinase [EC:2.7.1.19]"
+	2		WP_011154333.1	K00876	143.00	20.7	5.9e-05	"uridine kinase [EC:2.7.1.48]"
+	3		WP_011154333.1	K23148	179.00	15.7	0.0037	"cytidine diphosphoramidate kinase [EC:2.7.1.224]"
+	4		WP_011154333.1	K13799	557.17	9.9	0.07	"pantoate ligase / CMP/dCMP kinase [EC:6.3.2.1 2.7.4.25]"
+----------------------------------------------------------------------------------------------------
+Y	1	*	WP_011154339.1	K01601	332.67	796.7	3.2e-240	"ribulose-bisphosphate carboxylase large chain [EC:4.1.1.39]"
+	2		WP_011154339.1	K01559	547.53	204.1	8.4e-61	"3-oxoisoapionate-4-phosphate transcarboxylase/hydrolase [EC:3.7.1.28]"
+	3		WP_011154339.1	K24268	659.63	173.9	1.6e-51	"3-oxoisoapionate-4-phosphate decarboxylase [EC:4.1.1.121]"
+	4		WP_011154339.1	K08965	362.00	146.3	3.1e-43	"2,3-diketo-5-methylthiopentyl-1-phosphate enolase [EC:5.3.2.5]"
+	5		WP_011154339.1	K25035	355.90	131.9	6.8e-39	"S-methyl-5-thioribulose 1-phosphate isomerase [EC:5.3.3.23]"

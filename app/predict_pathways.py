@@ -4,6 +4,7 @@
 import json
 import os
 import sys
+from version import __version__
 
 def load_json(path):
     """Load a JSON file"""
@@ -100,6 +101,9 @@ def main(def_file_path, input_file_path, output_file_path):
             out.write(f"{name}\t{mark}\n")
 
 if __name__ == "__main__":
+    if len(sys.argv) == 2 and sys.argv[1] == '--version':
+        print(f"predict_pathways.py {__version__}")
+        sys.exit(0)
     if len(sys.argv) != 4:
         print("Usage: python3 ./app/predict_pathways.py ./definitions/kegg_key_enzymes.json ./test/sample.tsv ./output/sample.out", file=sys.stderr)
         sys.exit(1)
