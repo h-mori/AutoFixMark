@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.0.2] - 2025-01-27
+## [1.0.2] - 2026-01-27
 
 ### Changed
 - `kofamscan_parser.py` now always outputs 3 files: `<output>.tsv` (KO list), `<output>_gene.tsv` (gene details), and `<output>_detail.tsv` (detail view)
