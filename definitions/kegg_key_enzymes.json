@@ -1,5 +1,5 @@
 {
-    "version": "0.0.2",
+    "version": "0.0.3",
     "reference_database": "KEGG",
     "pathway_list": [
         {
@@ -8,11 +8,24 @@
                 "type": "all_of",
                 "list": [
                     {
-                        "type": "all_of",
-                        "enzyme_name": "phosphoribulokinase",
-                        "ec": "2.7.1.19",
-                        "id_list": [
-                            "K00855"
+                        "type": "one_of",
+                        "list": [
+                            {
+                                "type": "all_of",
+                                "enzyme_name": "phosphoribulokinase",
+                                "ec": "2.7.1.19",
+                                "id_list": [
+                                    "K00855"
+                                ]
+                            },
+                            {
+                                "type": "all_of",
+                                "enzyme_name": "phosphoribulokinase",
+                                "ec": "2.7.1.19",
+                                "id_list": [
+                                    "K28462"
+                                ]
+                            }
                         ]
                     },
                     {
@@ -281,7 +294,7 @@
                             "K00384",
                             "K21577",
                             "K21576",
-                            "K03671",
+                            "K03672",
                             "K10670"
                         ],
                         "min": 5
